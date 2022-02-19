@@ -4,3 +4,9 @@ declare module '*.vue' {
   const component: defineComponent<{}, {}, unknown>
   export default component
 }
+
+declare global {
+  interface Window {
+    NDEFReader: any
+  }
+}
